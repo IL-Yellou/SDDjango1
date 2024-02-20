@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from GISFirstDjango.views import splash
+from GISFirstDjango.views import user_profile
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', splash)
+    path('', splash),
+    path('u/', user_profile)
 ]
